@@ -1,148 +1,191 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora Pokémon World, conoce Pokémon, sus tipos, habilidades y descubre nuestra galería.">
     <title>Pokémon World</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
+    <!-- ENCABEZADO -->
+    <header id="inicio">
         <h1>Pokémon World</h1>
         <p>¡Explora el maravilloso mundo Pokémon!</p>
     </header>
 
-    <nav>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
         <a href="#pokemones">Pokémon</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#galeria">Galería</a>
         <a href="#nosotros">Nosotros</a>
     </nav>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <section id="inicio">
+
+        <!-- INICIO -->
+        <section id="bienvenida">
             <h2>Bienvenido a Pokémon World</h2>
             <p>Descubre diferentes Pokémon, sus tipos y habilidades.</p>
         </section>
 
+        <!-- TABLA DE POKÉMON -->
         <section id="pokemones">
             <h2>Pokémon destacados</h2>
             <p>Conoce a tus Pokémon favoritos.</p>
-        
-        
-        <table>
-    <thead>
-        <tr>
-            <th>Pokémon</th>
-            <th>Tipo</th>
-            <th>Habilidad</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Pikachu</td>
-            <td>Eléctrico</td>
-            <td>Electricidad estática</td>
-        </tr>
-        <tr>
-            <td>Charizard</td>
-            <td>Fuego / Volador</td>
-            <td>Mar llamas</td>
-        </tr>
-        <tr>
-            <td>Bulbasaur</td>
-            <td>Planta / Veneno</td>
-            <td>Espesura</td>
-        </tr>
-        <tr>
-            <td>Squirtle</td>
-            <td>Agua</td>
-            <td>Torrente</td>
-        </tr>
-        <tr>
-            <td>Gengar</td>
-            <td>Fantasma / Veneno</td>
-            <td>Cuerpo maldito</td>
-        </tr>
-    </tbody>
-</table>
-</section>
 
-<section id="contacto">
-    <h2>Contáctanos</h2>
-    <p>Envíanos tus comentarios sobre Pokémon World.</p>
+            <table>
+                <caption>Lista de Pokémon destacados, sus tipos y habilidades</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Pokémon</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Habilidad</th>
+                    </tr>
+                </thead>
 
+                <tbody>
+                    <tr>
+                        <td>Pikachu</td>
+                        <td>Eléctrico</td>
+                        <td>Electricidad estática</td>
+                    </tr>
 
-    <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"
-               placeholder="Ingresa tu nombre">
+                    <tr>
+                        <td>Charizard</td>
+                        <td>Fuego / Volador</td>
+                        <td>Mar llamas</td>
+                    </tr>
 
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo"
-               placeholder="Ingresa tu correo">
+                    <tr>
+                        <td>Bulbasaur</td>
+                        <td>Planta / Veneno</td>
+                        <td>Espesura</td>
+                    </tr>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje"
-                  placeholder="Escribe tu mensaje"></textarea>
+                    <tr>
+                        <td>Squirtle</td>
+                        <td>Agua</td>
+                        <td>Torrente</td>
+                    </tr>
 
-        <button type="submit">Enviar</button>
-    </form>
-</section>
+                    <tr>
+                        <td>Gengar</td>
+                        <td>Fantasma / Veneno</td>
+                        <td>Cuerpo maldito</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>Envíanos tus comentarios sobre Pokémon World.</p>
 
-<section id="galeria">
-    <h2>Galería Pokémon</h2>
-    <p>Descubre algunos Pokémon de nuestro mundo.</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingresa tu nombre"
+                >
 
-    <div class="galeria-contenedor">
-        <div class="pokemon-card">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu">
-            <h3>Pikachu</h3>
-            <p>Tipo: Eléctrico</p>
-        </div>
+                <label for="correo">Correo electrónico:</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="Ingresa tu correo"
+                >
 
-        <div class="pokemon-card">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard">
-            <h3>Charizard</h3>
-            <p>Tipo: Fuego / Volador</p>
-        </div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Escribe tu mensaje"
+                ></textarea>
 
-        <div class="pokemon-card">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur">
-            <h3>Venusaur</h3>
-            <p>Tipo: Planta / Veneno</p>
-        </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
-        <div class="pokemon-card">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="Blastoise">
-            <h3>Blastoise</h3>
-            <p>Tipo: Agua</p>
-        </div>
-    </div>
-</section>
+        <!-- GALERÍA DE POKÉMON -->
+        <section id="galeria">
+            <h2>Galería Pokémon</h2>
+            <p>Descubre algunos Pokémon de nuestro mundo.</p>
 
+            <div class="galeria-contenedor">
 
+                <div class="pokemon-card">
+                    <img
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+                        alt="Pikachu, Pokémon de tipo eléctrico"
+                    >
+                    <h3>Pikachu</h3>
+                    <p>Tipo: Eléctrico</p>
+                </div>
 
+                <div class="pokemon-card">
+                    <img
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+                        alt="Charizard, Pokémon de tipo fuego y volador"
+                    >
+                    <h3>Charizard</h3>
+                    <p>Tipo: Fuego / Volador</p>
+                </div>
+
+                <div class="pokemon-card">
+                    <img
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+                        alt="Venusaur, Pokémon de tipo planta y veneno"
+                    >
+                    <h3>Venusaur</h3>
+                    <p>Tipo: Planta / Veneno</p>
+                </div>
+
+                <div class="pokemon-card">
+                    <img
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+                        alt="Blastoise, Pokémon de tipo agua"
+                    >
+                    <h3>Blastoise</h3>
+                    <p>Tipo: Agua</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE NOSOTROS -->
         <section id="nosotros">
-    <h2>Sobre nosotros</h2>
-    <p>
-        Somos Roberto y Elvis, estudiantes de Desarrollo de Software.
-        Creamos Pokémon World como un proyecto colaborativo para
-        aprender y aplicar HTML, CSS y GitHub.
-    </p>
+            <h2>Sobre nosotros</h2>
 
-    <h3>Nuestros objetivos</h3>
-    <ul>
-        <li>Diseñar una página web sobre Pokémon.</li>
-        <li>Trabajar en equipo utilizando Git y GitHub.</li>
-        <li>Mejorar nuestras habilidades de desarrollo web.</li>
-    </ul>
-</section>
+            <p>
+                Somos Roberto y Elvis, estudiantes de Desarrollo de Software.
+                Creamos Pokémon World como un proyecto colaborativo para
+                aprender y aplicar HTML, CSS y GitHub.
+            </p>
+
+            <h3>Nuestros objetivos</h3>
+
+            <ul>
+                <li>Diseñar una página web sobre Pokémon.</li>
+                <li>Trabajar en equipo utilizando Git y GitHub.</li>
+                <li>Mejorar nuestras habilidades de desarrollo web.</li>
+            </ul>
+        </section>
 
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer>
         <p>© 2026 Pokémon World | Roberto y Elvis</p>
     </footer>
