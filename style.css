@@ -197,5 +197,38 @@ form button:hover {
     padding-left: 25px;
     line-height: 1.8;
 }
+/* DISEÑO RESPONSIVE PARA CELULARES */
+@media screen and (max-width: 600px) {
 
+    /* Tabla de Pokémon */
+    #pokemones table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    /* Formulario de contacto */
+    #contacto form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #contacto input,
+    #contacto textarea,
+    #contacto button {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    /* Galería */
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sección sobre nosotros */
+    #nosotros {
+        padding: 15px;
+    }
+}
 
