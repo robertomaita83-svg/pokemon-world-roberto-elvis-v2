@@ -65,3 +65,66 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* Estilos para la tabla de Pokémon */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #d7e2ee;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #e94335;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f7fb;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #d7e2ee;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #e94335;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c83228;
+}
+
+
